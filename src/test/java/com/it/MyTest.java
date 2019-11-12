@@ -20,9 +20,10 @@ public class MyTest {
         chromeDriver.findElement(By.name("pass")).sendKeys("337774a");
         chromeDriver.findElement(By.xpath("//input[@tabindex='5']")).click();
         chromeDriver.quit();
-/*//ul[@class='sn_menu']/li[@class='sn_menu_item']/span[@class='sn_menu_title']*/
+        /*//ul[@class='sn_menu']/li[@class='sn_menu_item']/span[@class='sn_menu_title']*/
         String text = chromeDriver.findElement(By.xpath("ul[@class='sn_menu']/li[@class='sn_menu_item']/span[@class='sn_menu_title']")).getText();
-        Assert.assertEquals(text,"ittest2@i.ua");
+        Assert.assertEquals(text, "ittest2@i.ua");
+        chromeDriver.quit();
     }
 
 }
